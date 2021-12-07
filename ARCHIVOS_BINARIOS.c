@@ -99,12 +99,12 @@ void LeeCalificaciones(ALUMNOS alumno,int alumnos)    //  float calif[MAX_ALUMNO
     for(i=0;i<alumnos;i++)    //i=i+1
     {
         printf("Dime el nombre del Alumno %d: ",i+1);
-        scanf("%s",alumno[i].nombre);
+        scanf("%s",alumno.nombre);
        printf("Calificacion: ");
-       scanf("%f",&alumno[i].calificacion);
+       scanf("%f",&alumno.calificacion);
        printf("\n");
-        fprintf(archivo,"alumno:%s  ",alumno[i].nombre);
-        fprintf(archivo,"calificacion: %f",alumno[i].calificacion);
+        fprintf(archivo,"alumno:%s  ",alumno.nombre);
+        fprintf(archivo,"calificacion: %f",alumno.calificacion);
         fprintf(archivo,"\n");
 
 
